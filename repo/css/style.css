@@ -1,0 +1,126 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: hsl(257, 40%, 49%);
+    font-family: poppins;
+    font-weight: 600;
+    color: white;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20);
+    grid-gap: 15px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.logo,
+.res1,
+.content {
+    margin-top: 20%;
+}
+
+.logo {
+    grid-column: 2/7;
+    grid-row: 1/2;
+    margin-top: 25%;
+    margin-bottom: -25%;
+}
+
+.res1 {
+    grid-column: 2/12;
+    grid-row: 2/10;
+}
+
+.content {
+    grid-column: 12/-1;
+    grid-row: 2/4;
+}
+
+.register {
+    grid-column: 12/15;
+    grid-row: 4/5;
+    background-color: white;
+    color: hsl(257, 56%, 37%);
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.social {
+    grid-column: 18/-1;
+    grid-row: 13/14;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.register:hover {
+    background-color: #fba0e3;
+    color: white;
+}
+
+footer {
+    grid-column: 1/12;
+    grid-row: 13/14;
+}
+
+.a {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 400;
+    }
+
+    .logo {
+        max-width: 160px;
+        margin-top: 3%;
+        margin-left: 6.4%;
+    }
+
+    .res1 {
+        max-width: 330px;
+        margin: 29% auto;
+        margin-bottom: -25%;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .register {
+        margin: 0 auto;
+        margin-bottom: 25%;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        align-items: center;
+        color: hsl(257, 56%, 37%);
+        font-weight: 700;
+    }
+
+    .social {
+        margin-top: -20%;
+        margin-right: 34%;
+        margin-left: 36%;
+        grid-gap: 10px;
+    }
+
+    footer {
+        margin-top: -5%;
+    }
+}
